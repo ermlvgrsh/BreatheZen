@@ -4,7 +4,7 @@
 target 'BreatheZen' do
   platform :ios, '10.0'
   use_frameworks!
-
   pod 'SnapKit', '~> 5.6'
+  pod 'SwiftLint'
 end
 
