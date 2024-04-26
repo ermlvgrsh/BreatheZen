@@ -36,7 +36,7 @@ class AudioViewModel: AudioViewModelProtocol {
     
     @objc private func updateTime() {
         guard let audioPlayer = audioPlayer else { return }
-        let currentTime = Int(audioPlayer.currentTime)
+        let currentTime = Int(audioPlayer.duration)
         timeString = timeToString(from: currentTime)
         delegate?.updateTime(timeString)
     }
@@ -46,7 +46,7 @@ class AudioViewModel: AudioViewModelProtocol {
             pause()
             return
         }
-
+        
         guard meditationModel == nil else { return }
             meditationModel = MeditationModel(fileName: "Method", audioPlayer: audioPlayer ?? AVAudioPlayer(), duration: 0.0)
         

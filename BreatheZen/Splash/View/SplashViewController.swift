@@ -48,11 +48,9 @@ final class SplashViewController: UIViewController {
     private let alertView: AlertView = {
         let view = AlertView()
         view.layer.masksToBounds = true
-        view.backgroundColor = .clear
         view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMinYCorner]
-        view.layer.cornerRadius = 20
-        
-        view.layer.backgroundColor = UIColor.lightGray.cgColor
+        view.layer.cornerRadius = 40
+        view.backgroundColor = UIColor.lightGray.withAlphaComponent(1)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.isHidden = true
         return view

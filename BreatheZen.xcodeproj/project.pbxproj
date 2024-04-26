@@ -25,6 +25,10 @@
 		37A94DE12B1FB93C005E98D6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A94DE02B1FB93C005E98D6 /* MenuViewController.swift */; };
 		37A94DE32B1FBD16005E98D6 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A94DE22B1FBD16005E98D6 /* UIViewController+Ext.swift */; };
 		37ABA92F2AE974D300E4CDCF /* MeditationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABA92E2AE974D300E4CDCF /* MeditationModel.swift */; };
+		37C88F492BDBABA700A48F50 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C88F482BDBABA700A48F50 /* UILabel+Ext.swift */; };
+		37C88F4B2BDBB6AB00A48F50 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C88F4A2BDBB6AB00A48F50 /* UIImageView+Ext.swift */; };
+		37C88F562BDBCCD200A48F50 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37C88F552BDBCCD200A48F50 /* SnapKit */; };
+		37C88F582BDBCCD200A48F50 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 37C88F572BDBCCD200A48F50 /* SnapKit-Dynamic */; };
 		37E731092B0CEC3800468D95 /* NavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731082B0CEC3800468D95 /* NavigationController+Ext.swift */; };
 		37E7310C2B0CF3E500468D95 /* AppCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7310B2B0CF3E500468D95 /* AppCoordinators.swift */; };
 		37E7310E2B0CFE9700468D95 /* Coordinator+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7310D2B0CFE9700468D95 /* Coordinator+Ext.swift */; };
@@ -33,11 +37,9 @@
 		37E731142B0D368200468D95 /* WimHofCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731132B0D368200468D95 /* WimHofCoordinator.swift */; };
 		37E731162B0D45C800468D95 /* RootCoordinator+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731152B0D45C800468D95 /* RootCoordinator+Ext.swift */; };
 		37E731182B0D57B700468D95 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731172B0D57B700468D95 /* SplashCoordinator.swift */; };
-		E881C0FFAFD32B5205A86C15 /* Pods_BreatheZen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E761CA49F89C036C58A6BEC2 /* Pods_BreatheZen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C1D5CFF90B6D49E60541FB4 /* Pods-BreatheZen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreatheZen.debug.xcconfig"; path = "Target Support Files/Pods-BreatheZen/Pods-BreatheZen.debug.xcconfig"; sourceTree = "<group>"; };
 		37123C5C2AD496B0003E7760 /* BreatheZen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreatheZen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37123C5F2AD496B0003E7760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37123C612AD496B0003E7760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		37A94DE02B1FB93C005E98D6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		37A94DE22B1FBD16005E98D6 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		37ABA92E2AE974D300E4CDCF /* MeditationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationModel.swift; sourceTree = "<group>"; };
+		37C88F482BDBABA700A48F50 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		37C88F4A2BDBB6AB00A48F50 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		37E731082B0CEC3800468D95 /* NavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+Ext.swift"; sourceTree = "<group>"; };
 		37E7310B2B0CF3E500468D95 /* AppCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinators.swift; sourceTree = "<group>"; };
 		37E7310D2B0CFE9700468D95 /* Coordinator+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Ext.swift"; sourceTree = "<group>"; };
@@ -66,8 +70,6 @@
 		37E731132B0D368200468D95 /* WimHofCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimHofCoordinator.swift; sourceTree = "<group>"; };
 		37E731152B0D45C800468D95 /* RootCoordinator+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootCoordinator+Ext.swift"; sourceTree = "<group>"; };
 		37E731172B0D57B700468D95 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		9A4BF722EB498C924BB08D62 /* Pods-BreatheZen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreatheZen.release.xcconfig"; path = "Target Support Files/Pods-BreatheZen/Pods-BreatheZen.release.xcconfig"; sourceTree = "<group>"; };
-		E761CA49F89C036C58A6BEC2 /* Pods_BreatheZen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreatheZen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,27 +77,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E881C0FFAFD32B5205A86C15 /* Pods_BreatheZen.framework in Frameworks */,
+				37C88F562BDBCCD200A48F50 /* SnapKit in Frameworks */,
+				37C88F582BDBCCD200A48F50 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		019B3725EED44B5FF603C06B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E761CA49F89C036C58A6BEC2 /* Pods_BreatheZen.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		37123C532AD496B0003E7760 = {
 			isa = PBXGroup;
 			children = (
 				37123C5E2AD496B0003E7760 /* BreatheZen */,
 				F831EB23636427817AA70760 /* Pods */,
-				019B3725EED44B5FF603C06B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,6 +235,8 @@
 		37A94DDA2B1DF8A7005E98D6 /* MeditationFlow */ = {
 			isa = PBXGroup;
 			children = (
+				37C88F4C2BDBBF4C00A48F50 /* BeginnerFlow */,
+				37C88F4D2BDBBF7900A48F50 /* HubbermanFlow */,
 				37A94DDB2B1FB71F005E98D6 /* WimHofFlow */,
 			);
 			path = MeditationFlow;
@@ -298,6 +294,44 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		37C88F4C2BDBBF4C00A48F50 /* BeginnerFlow */ = {
+			isa = PBXGroup;
+			children = (
+				37C88F502BDBBFB900A48F50 /* Coordinator */,
+				37C88F4F2BDBBFB300A48F50 /* ViewModel */,
+				37C88F4E2BDBBFAB00A48F50 /* View */,
+			);
+			path = BeginnerFlow;
+			sourceTree = "<group>";
+		};
+		37C88F4D2BDBBF7900A48F50 /* HubbermanFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HubbermanFlow;
+			sourceTree = "<group>";
+		};
+		37C88F4E2BDBBFAB00A48F50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37C88F4F2BDBBFB300A48F50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		37C88F502BDBBFB900A48F50 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		37E731072B0CEC2100468D95 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +341,8 @@
 				37E731152B0D45C800468D95 /* RootCoordinator+Ext.swift */,
 				37A94DE22B1FBD16005E98D6 /* UIViewController+Ext.swift */,
 				378698402B20BE8D00F5FEB7 /* UIButton+Ext.swift */,
+				37C88F482BDBABA700A48F50 /* UILabel+Ext.swift */,
+				37C88F4A2BDBB6AB00A48F50 /* UIImageView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,8 +350,6 @@
 		F831EB23636427817AA70760 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C1D5CFF90B6D49E60541FB4 /* Pods-BreatheZen.debug.xcconfig */,
-				9A4BF722EB498C924BB08D62 /* Pods-BreatheZen.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -327,17 +361,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37123C702AD496B2003E7760 /* Build configuration list for PBXNativeTarget "BreatheZen" */;
 			buildPhases = (
-				4FF9F5318E96C478BC9ED0B6 /* [CP] Check Pods Manifest.lock */,
 				37123C582AD496B0003E7760 /* Sources */,
 				37123C592AD496B0003E7760 /* Frameworks */,
 				37123C5A2AD496B0003E7760 /* Resources */,
-				D28BB3F10C3F375252494EC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BreatheZen;
+			packageProductDependencies = (
+				37C88F552BDBCCD200A48F50 /* SnapKit */,
+				37C88F572BDBCCD200A48F50 /* SnapKit-Dynamic */,
+			);
 			productName = BreatheZen;
 			productReference = 37123C5C2AD496B0003E7760 /* BreatheZen.app */;
 			productType = "com.apple.product-type.application";
@@ -366,6 +402,9 @@
 				Base,
 			);
 			mainGroup = 37123C532AD496B0003E7760;
+			packageReferences = (
+				37C88F542BDBCCD200A48F50 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 37123C5D2AD496B0003E7760 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,48 +427,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4FF9F5318E96C478BC9ED0B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BreatheZen-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D28BB3F10C3F375252494EC5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BreatheZen/Pods-BreatheZen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BreatheZen/Pods-BreatheZen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreatheZen/Pods-BreatheZen-frameworks.sh\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		37123C582AD496B0003E7760 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -451,12 +448,14 @@
 				378698432B20C93E00F5FEB7 /* MenuModel.swift in Sources */,
 				37123C622AD496B0003E7760 /* SceneDelegate.swift in Sources */,
 				37A94DE12B1FB93C005E98D6 /* MenuViewController.swift in Sources */,
+				37C88F4B2BDBB6AB00A48F50 /* UIImageView+Ext.swift in Sources */,
 				378698452B20C97200F5FEB7 /* MenuViewModel.swift in Sources */,
 				372188B92AEE4D0800EE25FA /* AudioViewModel.swift in Sources */,
 				378C20732B004ABE0076B429 /* ViewModelManager.swift in Sources */,
 				37E731122B0D247800468D95 /* RootCoordinator.swift in Sources */,
 				3792DCEF2AD8A28500679142 /* SplashViewController.swift in Sources */,
 				378698492B20CBCE00F5FEB7 /* SplashViewModel.swift in Sources */,
+				37C88F492BDBABA700A48F50 /* UILabel+Ext.swift in Sources */,
 				37E7310E2B0CFE9700468D95 /* Coordinator+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +590,6 @@
 		};
 		37123C712AD496B2003E7760 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1D5CFF90B6D49E60541FB4 /* Pods-BreatheZen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -619,7 +617,6 @@
 		};
 		37123C722AD496B2003E7760 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A4BF722EB498C924BB08D62 /* Pods-BreatheZen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -667,6 +664,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37C88F542BDBCCD200A48F50 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37C88F552BDBCCD200A48F50 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C88F542BDBCCD200A48F50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		37C88F572BDBCCD200A48F50 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C88F542BDBCCD200A48F50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37123C542AD496B0003E7760 /* Project object */;
 }

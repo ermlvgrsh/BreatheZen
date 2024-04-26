@@ -4,75 +4,25 @@ class AlertView: UIView {
     
     weak var delegate: AlertViewDelegate?
     
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textAlignment = .center
-        label.textColor = .label
-        label.text = "Look\n Before are going to start"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private let titleLabel = UILabel(
+        with: "Look\n Before are going to start",
+        and: 20)
     
-   private let headphoneLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.textAlignment = .center
-        label.textColor = .label
-        label.text = "Don't forget to put your headphones on\n to get more comfortable"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private let headphoneLabel = UILabel(
+        with: "Don't forget to put your headphones on\n to get more comfortable",
+        and: 20)
     
-    private let messageLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.textAlignment = .center
-        label.textColor = .label
-        label.numberOfLines = 0
-        label.text = "We advise you to turn on\n Don't Disturbe Mode or Airplane Mode"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private let messageLabel = UILabel(
+        with: "We advise you to turn on\n Don't Disturbe Mode or Airplane Mode",
+        and: 20)
+  
+    private let airplaneImageView = UIImageView(with: "airplane")
+
+    private let dontDisturbImageView = UIImageView(with: "moon.zzz.fill")
     
-    private let airplaneImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(systemName: "airplane")
-        imageView.tintColor = .black
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-    
-    private let dontDisturbImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(systemName: "moon.zzz.fill")
-        imageView.tintColor = .black
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-    
-    private lazy var doneButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.backgroundColor = .white
-        button.layer.backgroundColor = UIColor(red: 0.102,
-                                               green: 0.106,
-                                               blue: 0.133,
-                                               alpha: 1).cgColor
-        button.layer.cornerRadius = 16
-        let titleAttribute: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 17)
-        ]
-        
-        let titleAtributedString = NSAttributedString(string: "Done",
-                                                      attributes: titleAttribute)
-        button.tintColor = .white
-        button.setAttributedTitle(titleAtributedString, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(didTappedButton), for: .touchUpInside)
-        return button
-    }()
+    private lazy var doneButton = UIButton(for: "Done",
+                                           target: self,
+                                           action: #selector(didTappedButton))
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -96,14 +46,14 @@ class AlertView: UIView {
     private func makeContraints() {
 
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(snp.top).offset(10)
+            make.top.equalTo(snp.top).offset(40)
             make.leading.equalTo(snp.leading).offset(15)
             make.trailing.equalTo(snp.trailing).offset(-15)
             make.centerX.equalTo(snp.centerX)
         }
         
         messageLabel.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.top).offset(50)
+            make.top.equalTo(titleLabel.snp.top).offset(70)
             make.leading.equalTo(snp.leading).offset(15)
             make.trailing.equalTo(snp.trailing).offset(-15)
             make.centerX.equalTo(titleLabel.snp.centerX)
@@ -133,11 +83,9 @@ class AlertView: UIView {
             make.bottom.equalTo(snp.bottom).offset(-20)
             make.leading.equalTo(snp.leading).offset(20)
             make.trailing.equalTo(snp.trailing).offset(-20)
-
         }
     }
-    
     @objc func didTappedButton() {
-        delegate?.didTapDoneButton()
+       delegate?.didTapDoneButton()
     }
 }
